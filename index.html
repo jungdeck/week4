@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <script defer src="./assets/script.js"></script>
+    <title>Quiz Show</title>
+</head>
+
+<body>
+    <div class="container">
+        
+        <div class="start-container">
+            <header>Coding Quiz</header>
+                <div class="rules-box"> 
+                    <p> 
+                        Test your knowledge!
+                        <ul>
+                            Rules for the quiz:
+                            <li>15 Multiple choice questions will appear on the screen.</li>
+                            <li>The quiz is 5 minutes long</li>
+                            <li>Each Question will recieve a 20 second time-limit.</li>
+                            <li>Each Correct Answer adds 5 seconds</li>
+                            <li>Each Wrong Anser subtracts 5 seconds</li>
+                            <li>Click the submit each questions after selecting each answer.</li>
+                            <li>Check out your score in the Leaderboards.</li>
+                            <li> Have fun!</li>
+                        </ul>
+                    </p>
+                    <button class='btn' type="btn btn-start">Start Quiz</button>
+                    <button class="btn" type="btn btn-scores"> Leaderboards</button>
+                </div>
+        </div>
+
+        <div id ='question-container' class="hidden">
+            <div id ='answer-btn' class ='btn-list'>
+                <button class="btn">1</button>
+                <button class="btn">2</button>
+                <button class="btn">3</button>
+                <button class="btn">4</button>
+            </div>
+            <div class="controls">
+                <button id ='submit-btn' class="submit-btn btn hidden">Submit</button>
+                <button id = 'next-btn'class='next-btn btn hidden'>Next</button>
+            </div>
+        </div> 
+
+    </div>
+    
+
+</body>
+</html>

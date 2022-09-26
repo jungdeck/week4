@@ -1,0 +1,82 @@
+*,* ::after, *::before{
+    box-sizing: border-box;
+    font-family: sans-serif
+}
+body {
+    background-color: teal;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Given a start quiz container 
+I see a container within a blue webpage background
+I see a white container with a darker blue background border with the quiz rules in the middle 
+I see a start quiz button and a High scores button
+I can click on start quiz button to start the quizz
+I can click on High Scores button to view the High scores
+
+ */
+header {
+    display: flex;
+    font-size: 44px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid 4px;
+    border-color: navy;
+
+}
+.container {
+    background-color: white;
+    padding: 0px;
+    margin: 5px;
+    border: solid 4px;
+    border-color:navy;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: 0 0 10px navy;
+
+}
+.rules-box{
+    padding: 5px;
+}
+
+p{
+    display: flex;
+    font-size: 25px;;
+    justify-content: center;    
+}
+ul{
+    list-style-type: numbers;
+    font-size: 25px;
+}
+
+.btn{
+    display: inline-block;
+    background-color: whitesmoke;
+    border: solid 1px;
+    padding: 1px;
+    color: black;
+    font-size: 25px;
+    align-content: center;
+}
+
+.btn-list{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px;
+}
+.submit-btn, .next-btn{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+.hidden{
+    display: none;
+}
